@@ -62,5 +62,10 @@ RGB24之所以如此奇怪推論應於<a href="https://docs.unity3d.com/ScriptRe
 <br>
 最後補述，我們可以使用 UnityEngine.Profiling 命名空間下之 <a href="https://docs.unity3d.com/ScriptReference/Profiling.Profiler.GetRuntimeMemorySizeLong.html">Profiler.GetRuntimeMemorySizeLong(Object o)</a>取得該物件占用之記憶體空間，
 然而其限制使用於開發版本以及編輯器下，並有支援類型之限制。
+<br>
+另外，進入Unity後記憶體變成兩倍和貼圖本身之允許讀寫之設定是否為真有關，然而由於runtime動態載入貼圖必定允許讀寫，因此無法從這裡下手減輕記憶體負擔。<br>
+<br>
+To Do : <br>
+https://github.com/wolfpld/etcpak  Runtime壓縮貼圖成ETC之演算法，找機會來研究看看<br>
 
 
